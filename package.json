@@ -1,11 +1,11 @@
 {
   "name": "uikit-frontend-core",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.5",
+  "private": false,
+  "main": "./dist/uikit-frontend-core.common.js",
   "scripts": {
-    "deploy": "gh-pages -d dist",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --inline-vue --name uikit-frontend-core src/lib.ts",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 6006",
